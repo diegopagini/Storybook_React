@@ -2,17 +2,31 @@
 import './mylabel.css';
 
 type Size = 'normal' | 'h1' | 'h2' | 'h3';
+type Color = 'primary' | 'secondary' | 'tertiary';
 export interface Props {
 	/**
-	 * Este es el texto a mostrar en la etiqueta.
+	 * This is the text to display on the label.
 	 */
 	label: string;
 	/**
-	 * Este es el tamaño de la etiqueta.
+	 * This is the tag size.
 	 */
 	size: Size;
+	/**
+	 * Controls the capitalization of the text.
+	 */
+	allCaps?: boolean;
+	/**
+	 * Defines the color.
+	 */
+	color?: Color;
 }
 
-export const MyLabel = ({ label = 'No Label', size = 'normal' }: Props) => {
-	return <span className={`${size}`}>{label}</span>;
+export const MyLabel = ({
+	allCaps = false,
+	color = 'primary',
+	label = 'No Label',
+	size = 'normal',
+}: Props) => {
+	return <span className={`${size} text-${color}`}>{allCaps ? label.toUpperCase() : label}</span>;
 };
