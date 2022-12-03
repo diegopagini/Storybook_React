@@ -22,7 +22,7 @@ import { MyLabel } from '../../components/MyLabel';
 
 // 1 step.
 export default {
-	title: 'Example/MyLabel',
+	title: 'UI/MyLabel',
 	component: MyLabel,
 };
 // 2 step.
