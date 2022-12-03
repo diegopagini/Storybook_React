@@ -9,6 +9,7 @@ export default {
 	component: MyLabel,
 	argTypes: {
 		size: { control: 'select' },
+		fontColor: { control: 'color' },
 	},
 } as ComponentMeta<typeof MyLabel>;
 // 2 step.
@@ -37,4 +38,10 @@ export const Tertiary = Template.bind({});
 Tertiary.args = {
 	size: 'normal',
 	color: 'tertiary',
+};
+
+export const CustomFontColor = Template.bind({});
+Tertiary.args = {
+	size: 'normal',
+	fontColor: '#3d36be',
 };
