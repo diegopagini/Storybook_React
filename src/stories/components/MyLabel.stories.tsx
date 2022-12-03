@@ -1,22 +1,3 @@
-<!-- @format -->
-
-# Storybook - React
-
-## MyLabel
-
-#### MyLabel.tsx
-
-```tsx
-import './mylabel.css';
-
-export const MyLabel = () => {
-	return <span>Hola Mundo</span>;
-};
-```
-
-#### MyLabel.stories.tsx
-
-```tsx
 /** @format */
 import { MyLabel } from '../../components/MyLabel';
 
@@ -29,4 +10,3 @@ export default {
 const Template = () => <MyLabel />;
 // 3 step.
 export const Basic = Template.bind({});
-```
