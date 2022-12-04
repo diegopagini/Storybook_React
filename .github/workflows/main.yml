@@ -20,10 +20,10 @@ jobs:
           node-version: 14.17
 
       - name: Install Dependencies
-        run: yarn install
+        run: npm install
 
       - name: Build App
-        run: yarn build
+        run: npm run build
 
       - name: Semantic Release
         env:
