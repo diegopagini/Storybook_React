@@ -1,7 +1,7 @@
 /// <reference types="react" />
 /** @format */
 import './header.css';
-declare type User = {
+type User = {
     name: string;
 };
 export interface HeaderProps {

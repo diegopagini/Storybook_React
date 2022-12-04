@@ -1,8 +1,8 @@
 /// <reference types="react" />
 /** @format */
 import './mylabel.css';
-declare type Size = 'normal' | 'h1' | 'h2' | 'h3';
-declare type Color = 'primary' | 'secondary' | 'tertiary';
+type Size = 'normal' | 'h1' | 'h2' | 'h3';
+type Color = 'primary' | 'secondary' | 'tertiary';
 export interface Props {
     /**
      * This is the text to display on the label.
